@@ -8,7 +8,7 @@ import sklearn.linear_model._base as s_base
 sys.modules['sklearn.linear_model.base'] = s_base
 
 import pickle
-#########################################################
+##########################################################
 
 application = Flask(__name__) #Initialize the flask App
 model = pickle.load(open('model.pkl', 'rb'))
